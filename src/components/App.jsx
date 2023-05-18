@@ -19,8 +19,6 @@ export const App = () => {
   const formSubmitHandler = ({ name, number }) => {
     const submittedContact = { id: nanoid(), name, number };
 
-    console.log(contacts);
-
     setContacts(prevState => [...prevState, submittedContact]);
   };
 
