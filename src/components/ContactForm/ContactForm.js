@@ -80,5 +80,7 @@ export const ContactForm = ({ onFormSubmit, existingContacts }) => {
 
 ContactForm.propTypes = {
   onFormSubmit: PropTypes.func.isRequired,
-  existingContacts: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  existingContacts: PropTypes.arrayOf(
+    PropTypes.objectOf(PropTypes.string.isRequired).isRequired
+  ).isRequired,
 };
